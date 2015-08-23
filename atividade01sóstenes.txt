@@ -1,0 +1,57 @@
+linguagem : C
+Comandos de Entrada - Função scanf()
+ex :
+scanf(“<string de leitura>”, &<variavel1>,&<variavel2>,. . .);
+Comandos de entrada - Função getchar()
+Exemplo:
+
+p=getchar();
+Comandos de saída - Função printf()
+
+ex:
+
+printf(“<texto para impress˜ao>”, <express˜ao1>, <express˜ao2>, . . .);
+
+Linguagem : C#
+
+TextReader.Read – Lê um caractere;
+TextReader.ReadLine – Lê uma linha;
+TextWriter.Write – Escreve um caractere;
+TextWriter.WriteLine – Escreve uma linha.
+
+
+
+
+ex  :
+
+//Saudacao.cs using System.IO;  class Saudacao { //ponto de entrada da nossa aplicacao static void Main(string[] args) { //guardando uma referencia para o stream da entrada padrao, teclado TextReader leitor = System.Console.In;  //guardando uma referencia para a saida padrao, o terminal TextWriter escritor = System.Console.Out;  //o metodo Write escreve na saida padrao escritor.Write("Qual é o seu nome? ");  //o metodo ReadLine le do teclado uma o texto ate encontrar uma quebra //de linha (enter) string name = leitor.ReadLine();  //o metodo WriteLine escreve na saida e adiciona uma quebra de linha //(enter) escritor.WriteLine("Bom dia, {0}!", name); } }
+
+
+
+
+
+linguagem : Java
+saida padrão : System.out.println(...);
+entrada : String nome = br.readLine();
+
+
+
+
+linguagem :php
+
+leia :
+ 
+<?php
+// ler o conteúdo do arquivo para uma string
+$filename = "/usr/local/qualquer.txt";
+$handle = fopen ($filename, "r");
+$conteudo = fread ($handle, filesize ($filename));
+fclose ($handle);
+?> 
+
+escreva :
+
+void echo ( string $arg1 [, string $... ] )
+
+
+linguagem :

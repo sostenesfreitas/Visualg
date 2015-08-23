@@ -1,0 +1,321 @@
+algoritmo "semnome"
+funcao menor(num1,num2,num3:real):real
+inicio
+se (num1<num2) e (num1<num3) entao
+   retorne num1
+senao
+   se (num2<num1) e (num2<num3) entao
+      retorne num2
+   senao
+      se (num3<num1) e (num3<num2) entao
+         retorne num3
+      fimse
+   fimse
+fimse
+fimfuncao
+var
+num1,num2,num3:real
+inicio
+// Seção de Comandos
+escreval("informe primeiro numero")
+leia(num1)
+escreval("informe segundo numero")
+leia(num2)
+escreval("informe terceiro numero")
+leia(num3)
+
+escreval("o menor é ",Menor(num1,num2,num3))
+
+fimalgoritmo
+
+
+
+
+
+
+
+
+2.
+
+
+algoritmo "semnome"
+funcao data(dia:real):literal
+inicio
+escolha dia
+caso 1
+   retorne "um"
+caso 2
+   retorne "dois"
+caso 3
+   retorne "treis"
+caso 4
+   retorne "quatro"
+caso 5
+   retorne "cinco"
+caso 6
+   retorne " seis"
+caso 7
+   retorne "sete"
+caso 8
+   retorne "oito"
+caso 9
+   retorne "nove"
+caso 10
+   retorne "dez"
+caso 11
+   retorne "onze"
+caso 12
+   retorne "doze"
+caso 13
+   retorne "treze"
+caso 14
+   retorne"quatoze"
+caso 15
+   retorne"quinze"
+caso 16
+   retorne"dezeseis"
+caso 17
+   retorne "dezesete"
+caso 18
+   retorne"dezoito"
+caso 19
+   retorne "dezenove"
+caso 20
+   retorne "vinte"
+caso 21
+   retorne "vinte e um "
+caso 22
+   retorne "vinte e dois"
+caso 23
+   retorne "vinte e treis"
+caso 24
+   retorne "vinte e quatro"
+caso 25
+   retorne "vinte e cinco"
+caso 26
+   retorne "vinte e seis"
+caso 27
+   retorne "vinte e sete"
+caso 28
+   retorne "vinte e oito"
+caso 29
+   retorne "vinte nove"
+caso 30
+   retorne "trinta"
+caso 31
+   retorne "trinta e um"
+fimescolha
+
+
+fimfuncao
+var
+dia:inteiro
+inicio
+// Seção de Comandos
+escreval("informe dia")
+leia(dia)
+
+
+escreval(" data por extenso ",data(dia))
+
+
+
+
+7.algoritmo "semnome"
+funcao mex(mes:real):literal
+inicio
+escolha mes
+caso 1
+   retorne "janeiro"
+caso 2
+   retorne "fevereiro"
+caso 3
+   retorne "março"
+caso 4
+   retorne "abril"
+caso 5
+   retorne "maio"
+caso 6
+   retorne "junho"
+caso 7
+   retorne "julho"
+caso 8
+   retorne "agosto"
+caso 9
+   retorne "setembro"
+caso 10
+   retorne "outubro"
+caso 11
+   retorne "novembro"
+caso 12
+   retorne "dezembro"
+fimescolha
+fimfuncao
+
+funcao di(dia:real):literal
+inicio
+escolha dia
+caso 1
+   retorne "um"
+caso 2
+   retorne "dois"
+caso 3
+   retorne "treis"
+caso 4
+   retorne "quatro"
+caso 5
+   retorne "cinco"
+caso 6
+   retorne " seis"
+caso 7
+   retorne "sete"
+caso 8
+   retorne "oito"
+caso 9
+   retorne "nove"
+caso 10
+   retorne "dez"
+caso 11
+   retorne "onze"
+caso 12
+   retorne "doze"
+caso 13
+   retorne "treze"
+caso 14
+   retorne"quatoze"
+caso 15
+   retorne"quinze"
+caso 16
+   retorne"dezeseis"
+caso 17
+   retorne "dezesete"
+caso 18
+   retorne"dezoito"
+caso 19
+   retorne "dezenove"
+caso 20
+   retorne "vinte"
+caso 21
+   retorne "vinte e um "
+caso 22
+   retorne "vinte e dois"
+caso 23
+   retorne "vinte e treis"
+caso 24
+   retorne "vinte e quatro"
+caso 25
+   retorne "vinte e cinco"
+caso 26
+   retorne "vinte e seis"
+caso 27
+   retorne "vinte e sete"
+caso 28
+   retorne "vinte e oito"
+caso 29
+   retorne "vinte nove"
+caso 30
+   retorne "trinta"
+caso 31
+   retorne "trinta e um"
+fimescolha
+
+
+fimfuncao
+var
+dia,mes:real
+inicio
+// Seção de Comandos
+escreval("informe dia")
+leia(dia)
+escreval("informe mes")
+leia(mes)
+escreval("expreção : ",di(dia)," de ",mex(mes))
+
+
+8.algoritmo "semnome"
+funcao genero(sexo:literal):literal
+inicio
+se sexo = "m" entao
+retorne "bomdia sr "
+senao
+retorne "bomdia sra "
+fimse
+fimfuncao
+var
+nome,sexo:literal
+inicio
+// Seção de Comandos
+escreval("informe nome :")
+leia(nome)
+escreval("informe sexo : ")
+leia(sexo)
+escreval(genero(sexo),nome)
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+3.
+
+
+algoritmo "semnome"
+funcao total(preco,qtd,tudo:real):real
+inicio
+
+ tudo <-preco * qtd
+ retorne tudo
+
+
+fimfuncao
+var
+preco,qtd,tudo:real
+inicio
+// Seção de Comandos
+escreval("informe preço")
+leia(preco)
+escreval("informe qtd")
+leia(qtd)
+
+
+escreval(" total ",total(preco,qtd,tudo))
+
+fimalgoritmo
+
+
+
+5.
+
+
+
+algoritmo "semnome"
+funcao ex(hora:real):literal
+inicio
+se (hora >=1) e(hora <=12) entao
+retorne "bomdia"
+senao
+se (hora >=13) e (hora <=19) entao
+retorne "boatarde"
+senao
+se (hora >=20) e (hora <=24) entao
+retorne "boanoite"
+ fimse
+ fimse
+ fimse
+
+
+fimfuncao
+var
+hora:real
+inicio
+// Seção de Comandos
+escreval("informe hora")
+leia(hora)
+escreval("expreção : ",ex(hora))
+
+
+6.

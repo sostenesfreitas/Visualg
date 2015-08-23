@@ -1,0 +1,152 @@
+1.
+
+var
+I:inteiro
+valores:vetor [1..4] de inteiro
+inicio
+para I de 1 ate 4 faca
+escreval("informe valor ",I)
+leia(valores[I])
+fimpara
+escreval("listando valores ")
+para I de 1 ate 4 faca
+escreval("valor",I," : ",valores[I])
+fimpara
+
+
+
+
+
+
+
+2 . I:inteiro
+valores:vetor [1..4] de inteiro
+soma,menor,maior,media:inteiro
+inicio
+menor <-99999
+para I de 1 ate 4 faca
+escreval("informe valor ",I)
+leia(valores[I])
+soma <- soma + valores[I])
+se valores[I] > maior entao
+maior <- valores[I]
+fimse
+se valores[I] < menor entao
+menor <- valores[I]
+fimse
+fimpara
+escreval("listando valores ")
+para I de 1 ate 4 faca
+escreval("valor",I," : ",valores[I])
+fimpara
+escreval("total",soma)
+escreval("maior valor : ",maior)
+escreval("menor valor ",menor)
+escreval("media : ",soma /  I)
+
+
+
+
+3/4 .
+
+
+
+
+var
+I,qtda,qtdr:inteiro
+notas:vetor [1..3] de inteiro
+nomes:vetor [1..3] de literal
+
+inicio
+
+para I de 1 ate 3 faca
+   escreval("informe nota ",I)
+   leia(notas[I])
+   enquanto (notas[I] < 0) ou (notas[I] > 10) faca
+      escreval("informe nota  ",I)
+      leia(notas[I])
+   fimenquanto
+   se notas[I] >= 7 entao
+      qtda <- qtda + 1
+   senao
+      qtdr <- qtdr + 1
+   fimse
+
+escreval("informe nome : ",I)
+leia(nomes[I])
+fimpara
+escreval("listando notas e nomes ")
+para I de 1 ate 3 faca
+escreval("nota",I," : ",notas[I],"nome",I," : ",nomes[I])
+fimpara
+escreval("aprovados : ",qtda)
+escreval("reprovados : ",qtdr)
+
+
+
+
+5.
+
+var
+i:inteiro
+numeros:vetor[1..100]de real
+inicio
+para i de 1 ate 100 faca
+numeros[i]<-(i)
+escreval(numeros[i])
+fimpara
+
+
+
+6.
+
+
+var
+i:inteiro
+numeros:vetor[1..5]de real
+inicio
+para i de 5 ate 1 passo -1 faca
+numeros[i]<-(i)
+escreval(numeros[i])
+fimpara
+escreval("vetores na ordem correta : ")
+para i de 1 ate 5 faca
+escreval("ordem correta ",numeros[i])
+fimpara
+
+
+
+7.
+
+
+
+i:inteiro
+numeros:vetor[1..200]de real
+inicio
+para i de 1 ate 200  faca
+numeros[i]<-(i*3)
+escreval(numeros[i])
+fimpara
+
+
+
+8.
+
+var
+i:inteiro
+n:vetor[1..10]de real
+inicio
+para i de 1 ate 10  faca
+n[i]<-(i)
+
+fimpara
+ para i de 10 ate 1 passo -1 faca
+ se ((i%2)=0) entao
+ escreval("numeros pares : ",n[i])
+ fimse
+ fimpara
+ para i de 10 ate 1 passo -1 faca
+ se ((i%2)=1) entao
+ escreval("numeros impares : ",n[i])
+ fimse
+ fimpara

@@ -1,0 +1,125 @@
+1.
+var
+i:inteiro
+a:vetor [1..5] de inteiro
+b:vetor [1..5] de inteiro
+c:vetor [1..5] de inteiro
+soma:inteiro
+inicio
+para i de 1 ate 5 faca
+escreval("informe valor para vetor a : ")
+leia(a[i])
+fimpara
+para i de 1 ate 5 faca
+escreval("informe valor para vetor b : ")
+leia(b[i])
+fimpara
+para i de 1 ate 5 faca
+escreval("informe valor para vetor c : ")
+c[i]<-a[i]+b[i]
+fimpara
+
+para i de 1 ate 5 faca
+escreval("valores a :",a[i])
+escreval("valores b :",b[i])
+escreval("valores c :",c[i])
+ fimpara
+
+
+
+2.
+
+
+
+var
+i:inteiro
+a:vetor [1..5] de inteiro
+b:vetor [1..5] de inteiro
+c:vetor [1..5] de inteiro
+soma:inteiro
+inicio
+para i de 1 ate 5 faca
+escreval("informe valor para vetor a : ")
+leia(a[i])
+fimpara
+para i de 1 ate 5 faca
+escreval("informe valor para vetor b : ")
+leia(b[i])
+fimpara
+para i de 1 ate 5 faca
+escreval("informe valor para vetor c : ")
+c[i]<-a[i]+b[i]
+fimpara
+
+para i de 1 ate 5 faca
+escreval("valores a :",a[i])
+escreval("valores b :",b[i])
+escreval("valores c :",c[i] * 2)
+ fimpara
+
+
+
+
+3.
+
+var
+i:inteiro
+a:vetor [1..5] de inteiro
+b:vetor [1..5] de inteiro
+c:vetor [1..5] de inteiro
+soma,qtd10:inteiro
+inicio
+para i de 1 ate 5 faca
+escreval("informe valor para vetor a : ")
+leia(a[i])
+fimpara
+para i de 1 ate 5 faca
+escreval("informe valor para vetor b : ")
+leia(b[i])
+fimpara
+para i de 1 ate 5 faca
+escreval("informe valor para vetor c : ")
+c[i]<-a[i]+b[i]
+
+se c[i] > 10 entao
+qtd10 <- qtd10 + 1
+fimse
+fimpara
+
+para i de 1 ate 5 faca
+escreval("valores a :",a[i])
+escreval("valores b :",b[i])
+escreval("valores c :",c[i] * 2)
+escreval("qtd numeros miores que 10 no vetor c :",qtd10)
+ fimpara
+
+
+
+4.
+
+var
+i:inteiro
+a:vetor [1..5] de inteiro
+b:vetor [1..5] de inteiro
+c:vetor [1..5] de inteiro
+soma,qtd10:inteiro
+inicio
+para i de 1 ate 5 faca
+escreval("informe valor para vetor a : ")
+leia(a[i])
+fimpara
+para i de 1 ate 5 faca
+escreval("informe valor para vetor b : ")
+leia(b[i])
+fimpara
+para i de 1 ate 5 faca
+escreval("informe valor para vetor c : ")
+
+fimpara
+
+para i de 1 ate 5 faca
+escreval("valores a :",a[i])
+escreval("valores b :",b[i])
+escreval("valores c :",c[i])
+
+ fimpara

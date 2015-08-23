@@ -1,0 +1,55 @@
+var
+ram,hd,valor,vender:vetor [1..5] de real
+aux,tram,thd:real
+troca:literal
+i,qtd,qtdv:inteiro
+inicio
+// Seção de Comandos
+
+para i de 1 ate 2 faca
+   escreval("informe memoria ram.Disponivel : 1GB,2GB,4GB,8GB ")
+   leia(ram[i])
+   qtd <- qtd + 1
+   enquanto (ram[i]<>1)e(ram[i]<>2)e(ram[i]<>4)e(ram[i]<>8)faca
+      escreval("informe memoria ram.Disponivel : 1GB,2GB,4GB,8GB ")
+      leia(ram[i])
+      tram<-tram+ram[i]
+   fimenquanto
+
+   escreval("informe HD.Hd Disponivel:120,180,320,500 ")
+   leia(hd[i])
+   enquanto (hd[i]<>120)e(hd[i]<>180)e(hd[i]<>320)e(hd[i]<>500) faca
+      escreval("informe HD.Hd Disponivel:120,180,320,500 ")
+      leia(hd[i])
+      thd<-thd+hd[i]
+   fimenquanto
+
+   escreval("informe o valor ")
+   leia(valor[i])
+   se valor[i] < 300 entao
+      qtdv <- qtdv + 1
+      fimse
+      enquanto valor[i] < 0 faca
+         escreval("informe o valor ")
+         leia(valor[i])
+      fimenquanto
+   fimpara
+
+   troca <-"V"
+   enquanto troca = "V" faca
+      troca <-"F"
+      para i de 1 ate 2 faca
+         se (valor[i]>valor[i+1]) entao
+            aux <-valor[i]
+            valor[i]<-valor[i+1]
+            valor[i+1]<-aux
+            troca <-"V"
+         fimse
+      fimpara
+   fimenquanto
+
+
+ para i de 1 ate 2 faca
+ escreval("valor decresente dos pcs",valor[i])
+ fimpara
+fimalgoritmo

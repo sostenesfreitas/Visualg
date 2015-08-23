@@ -1,0 +1,94 @@
+var
+a :vetor[1..5] de inteiro
+i,soma,qtd10:inteiro
+media:real
+inicio
+para i de 1 ate 5 faca
+escreval("entre com o ",i," para vetor a .Valor : ")
+leia(a[i])
+soma <-soma + a[i]
+
+se a[i] >= 10 entao
+qtd10 <- qtd10
+fimse
+
+fimpara
+escreval("valor total da soma dos vetores : ",soma)
+escreval("media dos valores : ",soma / i )
+escreval("qtd de valores maiores que 10 : ",qtd10)
+
+
+
+2.
+
+var
+a :vetor[1..5] de inteiro
+i,soma,qtd10,menor,maior:inteiro
+media:real
+inicio
+menor<-99999
+para i de 1 ate 5 faca
+   escreval("entre com o ",i," para vetor a .Valor : ")
+   leia(a[i])
+   se (a[i]>=10) entao
+      qtd10<-qtd10 +1
+   fimse
+   soma <-soma + a[i]
+
+   se a[i] > maior entao
+      maior <- a[i]
+   fimse
+   se a[i] < menor entao
+      menor <-a[i]
+   fimse
+fimpara
+
+para i de 1 ate 5 faca
+   escreval(a[i])
+fimpara
+escreval("valor total da soma dos vetores : ",soma)
+escreval("media dos valores : ",soma / i )
+escreval("qtd de valores maiores que 10 : ",qtd10)
+escreval("maior valor :",maior)
+escreval("menor valor ",menor)
+
+
+3.
+
+
+var
+
+nome :vetor[1..5] de literal
+i:inteiro
+inicio
+
+para i de 1 ate 5 faca
+   escreval("informe nome : ")
+   leia(nome[i])
+   fimpara
+para i de 5 ate 1 passo -1 faca
+   escreval(nome[i])
+fimpara
+
+
+
+
+4.
+
+
+var
+ idade :vetor[1..5] de inteiro
+nome :vetor[1..5] de literal
+i:inteiro
+inicio
+
+para i de 1 ate 5 faca
+   escreval("informe nome : ")
+   leia(nome[i])
+   escreval("informe idade : ")
+   leia(idade[i])
+   fimpara
+para i de 1 ate 5 faca
+   escreval("nome : ",nome[i]," e idade da pessoa : ",idade[i])
+fimpara
+

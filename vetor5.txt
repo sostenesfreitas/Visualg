@@ -1,0 +1,52 @@
+var
+placa :vetor[1..5] de literal
+ano :vetor[1..5] de inteiro
+valor:vetor[1..5] de inteiro
+aux,i,soma,qtd100:inteiro
+trocou:caracter
+inicio
+
+para i de 1 ate 5 faca
+   escreval("informe placa : ")
+   leia(placa[i])
+   escreval("informe ano : ")
+   leia(ano[i])
+   escreval("informe valor : ")
+   leia(valor[i])
+
+   soma<-soma+valor[i]
+
+   se valor[i] >="100,000" entao
+      qtd100 <- qtd100 + 1
+   fimse
+fimpara
+
+para i de 1 ate 4 faca
+   se (valor[i]>valor[i+1]) entao
+      aux <- valor[i]
+      valor[i] <- valor[i+1]
+      valor[i+1] <- aux
+
+   fimse
+fimpara
+ escreval("total da frota : ",soma)
+ escreval("qtd carros que custam mais que 100mil :",qtd100)
+
+
+para i de 5 ate 1 passo -1 faca
+   escreval ("valor decrescente :",valor[i])
+fimpara
+
+
+para i de 1 ate 4 faca
+   se (ano[i]>ano[i+1]) entao
+      aux <- anoi]
+      ano[i] <- ano[i+1]
+      ano[i+1] <- aux
+   fimse
+fimpara
+
+
+para i de 1 ate 5 faca
+   escreval("valor cresente :",ano[i])
+fimpara

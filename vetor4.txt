@@ -1,0 +1,52 @@
+1.
+var
+nota1 :vetor[1..5] de inteiro
+nota2 :vetor[1..5] de inteiro
+media:vetor[1..5] de real
+nome :vetor[1..5] de literal
+i,soma:inteiro
+maior,menor:real
+qtda,qtdr:inteiro
+nomemaior,nomemenor:literal
+inicio
+menor<-99999
+para i de 1 ate 5 faca
+   escreval("informe nome : ")
+   leia(nome[i])
+   escreval("informe nota1 : ")
+   leia(nota1[i])
+   escreval("informe nota2 : ")
+   leia(nota2[i])
+   media[i] <-(nota1[i]+nota2[i])/2
+
+
+   se media[i] >=7 entao
+      qtda<-qtda+1
+   senao
+      se media[i] <7 entao
+         qtdr<-qtdr+1
+      fimse
+   fimse
+   se media[i]>maior entao
+      maior<-media[i]
+      nomemaior<-nome[i]
+   fimse
+   se media[i]<menor entao
+      menor<-media[i]
+      nomemenor<-nome[i]
+   fimse
+fimpara
+se qtda > qtdr entao
+   escreval("maior o numeros de aprovados")
+senao
+   se qtda < qtdr entao
+      escreval("maior o numeros de reprovados")
+   fimse
+fimse
+
+
+escreval("nome : ",nomemaior," individuo com maior media : ",maior)
+escreval("nome : ",nomemenor," individuo com menor media : ",menor)
+escreval("qtd aprovados : ",qtda)
+escreval("porcentagem de aprovados : ",qtda /(qtda+qtdr)*100)
+

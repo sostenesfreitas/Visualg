@@ -1,0 +1,216 @@
+var
+numero:inteiro
+iptu :inteiro
+compesa :inteiro
+energia :inteiro
+soma1,soma2,soma3:inteiro
+media1,media2,media3:real
+maior:inteiro
+menor:inteiro
+total : real
+percentual:real
+mediageral:real
+var
+numero:inteiro
+iptu :inteiro
+compesa :inteiro
+energia :inteiro
+soma1,soma2,soma3:inteiro
+media1,media2,media3:real
+maior:inteiro
+menor:inteiro
+total : real
+percentual:real
+mediageral:real
+qtd1,qtd2,qtd3,qtdmaior:inteiro
+m:inteiro
+inicio
+menor <- 9999999
+escreval("informe numero ")
+leia(numero)
+enquanto numero <> (-1) faca
+
+   escreval ("informe iptu")
+   leia(iptu)
+   qtd1 <- qtd1 + 1
+   soma1 <- soma1 + iptu
+enquanto iptu < 0 faca
+escreval ("informe iptu")
+   leia(iptu)
+fimenquanto
+   escreval("informe valor compesa ")
+   leia(compesa)
+   qtd2 <- qtd2 + 1
+   soma2 <- soma2 + compesa
+enquanto compesa < 0 faca
+escreval ("informe valor compesa")
+   leia(compesa)
+fimenquanto
+   escreval("informe valor energia")
+   leia(energia)
+   qtd3 <- qtd3 + 1
+   soma3 <- soma3 + energia
+enquanto energia < 0 faca
+escreval ("informe valor energia")
+   leia(energia)
+fimenquanto
+   se energia > maior entao
+      maior <- energia
+   fimse
+   se compesa < menor entao
+      menor <- compesa
+   fimse
+
+   se soma1 > 200 entao
+      qtdmaior <- qtdmaior + 1
+   fimse
+   se soma2 > 200 entao
+      qtdmaior <- qtdmaior + 1
+   fimse
+   se soma3 > 200 entao
+      qtdmaior <- qtdmaior + 1
+   fimse
+
+   escreval("informe numero")
+   leia(numero)
+fimenquanto
+se (soma1 > soma2) e (soma1 > soma3)entao
+   m <-soma1
+   escreval("conta de maior valor é iptu")
+senao
+   se (soma2 > soma1) e (soma2 > soma3)entao
+      m <-soma2
+      escreval("conta de maior valor é compesa")
+   senao
+      se (soma3 > soma2) e (soma3 > soma1)entao
+         m <-soma3
+         escreval("conta de maior valor é energia")
+      fimse
+   fimse
+fimse
+
+media1 <- soma1 / qtd1
+media2 <- soma2 / qtd2
+media3 <- soma3 / qtd3
+
+total <- soma1 + soma2 + soma3
+
+percentual <- soma1 / total
+percentual <- percentual * 100
+
+mediageral <- media1 + media2 + media3
+escreval(" total gasto pelas casas com iptu",soma1)
+escreval ("total gasto pelas casas com compesa",soma2)
+escreval ("total gasto pelas casas com energia",soma3)
+escreval("média de gasto com energia",media1)
+escreval("média de gasto com compesa",media2)
+escreval(" média de gasto com iptu",media3)
+escreval("maior valor de gasto com energia",maior)
+escreval("menor valor de gasto com compesa",menor)
+escreval("percentual de gasto com iptu em relação ao total",percentual)
+escreval("gasto total geral",total)
+escreval ("média geral",mediageral)
+escreval("informe quantas casas gastam mais de 200 reais",qtdmaior)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nome : literal
+marca :literal
+jogos:inteiro
+valor:inteiro
+qtd1,qtd2,qtd3,qtd4,qtd:inteiro
+soma,soma2:inteiro
+maior:inteiro
+marcamaior:literal
+media,media1,media2,media3,media4,percentual:real
+total : inteiro
+inicio
+escreval("informe nome ")
+leia(nome)
+enquanto nome <> "fim" faca
+   qtd <- qtd + 1
+   escreval ("informe marca  do videogame P- Playstation, X - Xbox, W - Nintendo Wii, O - outros")
+   leia(marca)
+   escreval("quantidade de jogos que possui")
+   leia(jogos)
+   soma <- soma + jogos
+   escreval("informe valor de compra")
+   leia(valor)
+   enquanto valor < 0 faca
+      escreval("informe valor de compra")
+      leia(valor)
+   fimenquanto
+   soma2 <- soma2 + valor
+
+
+   se valor > maior entao
+      maior <- valor
+      marcamaior <- marca
+   fimse
+
+   se marca = "p" entao
+      qtd1 <- qtd1 + 1
+   senao
+      se marca = "x" entao
+         qtd2 <- qtd2 + 1
+      senao
+         se marca = "w" entao
+            qtd3 <- qtd3 + 1
+         senao
+            se marca = "o" entao
+               qtd4 <- qtd4 + 1
+            fimse
+         fimse
+      fimse
+   fimse
+
+
+
+   escreval("informe nome ")
+   leia(nome)
+
+fimenquanto
+
+
+media <- soma / qtd
+total <- qtd1 + qtd2 + qtd3 + qtd4
+percentual <- qtd1 / total  * 100
+
+media1 <- qtd1 / soma
+media2 <- qtd2 / soma
+media3 <- qtd3 / soma
+media4 <- qtd4 / soma
+
+
+
+escreval ("qtd clientes pesquisados",qtd)
+escreval("qtd clientes playstation",qtd1)
+escreval("qtd clientes xbox",qtd2)
+escreval("qtd clientes wii",qtd3)
+escreval("qtd clientes oustos",qtd4)
+escreval("total geral de jogos",soma)
+escreval("média de jogos por pessoa",media)
+escreval("valor total dos videogames",total)
+escreval ("videogame maios caro",maior, " " , marcamaior)
+escreval("percentual de Playstation em relação ao total",percentual)
+escreval ("quantidade média de jogos do playstation",media1)
+escreval ("quantidade média de jogos do xbox",media2)
+escreval ("quantidade média de jogos do wii",media3)
+escreval ("quantidade média de jogos do outros",media4)

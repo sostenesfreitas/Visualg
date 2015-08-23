@@ -1,0 +1,114 @@
+var
+nome,entidade,menornome,nomemaior,entida:literal
+valor,valorg,valora,valorn,valorh:inteiro
+qtda,qtd,qtdg,qtdh,qtdn:inteiro
+menorvalor,maiorvalor,menor:inteiro
+soma:inteiro
+mediag,median,mediaa,mediah:real
+inicio
+menorvalor<-9999999
+escreval("informe nome:")
+leia(nome)
+enquanto nome <> "fim" faca
+   qtd <-qtd +1
+   escreval("informe entidade escolhida")
+   leia(entidade)
+   enquanto (entidade <> "g") e (entidade <> "n") e (entidade <> "h") e (entidade <> "a") faca
+      escreval("informe entidade escolhida g , n , h ou a")
+      leia(entidade)
+   fimenquanto
+   escreval("informe valor")
+   leia(valor)
+   enquanto valor < 1 faca
+      escreval("informe valor  mais que 0 seu liso")
+      leia(valor)
+
+
+   fimenquanto
+
+   se entidade = "g" entao
+      qtdg <- qtdg + 1
+      valorg <- valor
+   senao
+      se entidade = "n" entao
+         qtdn <- qtdn + 1
+         valorn <- valor
+      senao
+         se entidade = "h" entao
+            qtdh <- qtdh + 1
+            valorh <- valor
+         senao
+            se entidade = "a" entao
+               qtda <- qtda + 1
+               valora <- valor
+
+            fimse
+         fimse
+      fimse
+   fimse
+
+
+
+   se valor > maiorvalor entao
+      maiorvalor <-valor
+      nomemaior <-nome
+   fimse
+
+   se valor < menorvalor entao
+      menorvalor <-valor
+      menornome <-nome
+   fimse
+
+     soma <- soma + valor
+
+   escreval("informe nome")
+   leia(nome)
+fimenquanto
+
+
+   mediag <-qtdg/soma
+
+      median <-qtdn/soma
+
+
+         mediah <-qtdh/soma
+
+            mediaa <-qtda/soma
+
+
+se (valorg < valorn) e (valorg < valorh) e (valorg < valora) entao
+   menor <- valorg
+   entida <- "graac"
+senao
+   se (valorn < valorg) e (valorn < valorh) e (valorn < valora) entao
+      menor <- valorn
+      entida <- "nacc"
+   senao
+      se (valorh < valorn) e (valorh < valorg) e (valorh < valora) entao
+         menor <- valorh
+          entida <- "hospital do cancer"
+      senao
+         se (valora < valorn) e (valora < valorh) e (valora < valorg) entao
+            menor <- valorg
+             entida <-"aacd"
+         fimse
+      fimse
+   fimse
+fimse
+
+escreval ("qtd doadores",qtd)
+escreval("qtd doadores por graac",qtdg)
+escreval("qtd doadores por nacc",qtdn)
+escreval("qtd doadores por hospital do cancer",qtdh)
+escreval("qtd doadores por aacd",qtda)
+escreval("valor arrecadado por graac",valorg)
+escreval("valor arrecadado por nacc",valorn)
+escreval("valor arrecadado por hospital do cancer",valorh)
+escreval("valor arrecadado por aacd",valora)
+escreval("maior doador",maiorvalor, "  " ,nomemaior)
+escreval("menor doador",menorvalor, "  " ,menornome)
+escreval ("media de valor doado para graar",mediag)
+escreval ("media de valor doado para nacc",median)
+escreval ("media de valor doado para hospital do cancer",mediah)
+escreval ("media de valor doado para aacd",mediaa)
+escreval ("entidade que menos arrecado",entida)
